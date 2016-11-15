@@ -1,0 +1,53 @@
+table {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    border: 3px solid rgb(50, 50, 50);
+    border-radius: 10px;
+    border-spacing: 5px;
+    background-color: rgb(75, 180, 245);
+}
+
+#selectionDiv {
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 10px 0 75px 0;
+    border-radius: 25px;
+    background-color: white;
+}
+
+#selectionContentDiv {
+    width: 80%;
+    margin: 10px 10% 0 10%;
+}
+
+.selectionButtons {
+    background-color: rgb(200, 0, 0);
+    border: none;
+    color: white;
+    width: 25%;
+    height: 50px;
+    float: left;
+}
+
+.selectionButtons:hover {
+    cursor: pointer;
+    background-color: rgb(225, 0, 0);
+    font-weight: bold;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+#topFavouritesDiv, #topRetweetsDiv, #topPositivesDiv, #topNegativesDiv {
+    width: 80%;
+    margin: 0 10% 30px 10%;
+    display: none;
+}
+
+#topFavTweetsTitle, #topReTweetsTitle, #topPosTweetsTitle, #topNegTweetsTitle {
+    width: 100%;
+    margin: 0 0 0 0;
+}
+
+.showMoreButtons {
+    width: 100%;
+    height: 30px;
+}

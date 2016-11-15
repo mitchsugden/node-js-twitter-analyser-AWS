@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CAB432 - Assignment 2 - Michael & Mitch</title>
+	<link rel="stylesheet" type="text/css" href="styles/core.css">
+	<link rel="stylesheet" type="text/css" href="styles/topTweets.css">
+	<link rel="stylesheet" type="text/css" href="styles/datablock.css">
+	<script src="//d3js.org/d3.v4.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="scripts/shared.js"></script>
+	<script src="scripts/search.js"></script>
+	<script src="scripts/favouriteTweets.js"></script>
+	<script src="scripts/retweets.js"></script>
+	<script src="scripts/positiveTweets.js"></script>
+	<script src="scripts/negativeTweets.js"></script>
+</head>
+<body>
+<div id="contentDiv">
+	<header>
+		<h1>CAB432 - Micko & Mitcho</h1>
+	</header>
+	<h2 id="title">Tweet Analyser</h2>
+	<div id="searchDiv">
+		<form action="javascript:sendSearch();">
+			<input id="search" type="text" name="search" placeholder="Search...">
+			<input type="submit" value="Search">
+		</form>
+	</div>
+
+	<h3>Positive and Negative Tweet History Graph:</h3>
+	<!-- Window for graph -->
+	<svg width="700" height="500"></svg>
+
+	<div id="selectionDiv">
+		<div id="selectionContentDiv">
+			<h3 id="selectionTitle">Select functionality:</h3>
+			<button class="selectionButtons" id="favouriteButton" onClick="javascript:ToggleFavourites();">Favourites</button>
+			<button class="selectionButtons" id="retweetButton" onClick="javascript:ToggleRetweets();">Retweets</button>
+			<button class="selectionButtons" id="positiveButton" onClick="javascript:TogglePositives();">Positive</button>
+			<button class="selectionButtons" id="negativeButton" onClick="javascript:ToggleNegatives();">Negative</button>
+		</div>
+	</div>
+
+	<div id="topFavouritesDiv">
+		<h3 id="topFavTweetsTitle">Top Favourite Tweets:</h3>
+		<div id="favouritesResultsDiv"></div>
+		<button class="showMoreButtons" id="showMoreFav" onClick="javascript:ShowMoreFavTweets();">Show More Top Favourites</button>
+	</div>
+
+	<div id="topRetweetsDiv">
+		<h3 id="topReTweetsTitle">Top Retweeted Tweets:</h3>
+		<div id="retweetsResultsDiv"></div>
+		<button class="showMoreButtons" id="showMoreRetweets" onClick="javascript:ShowMoreReTweets();">Show More Top Retweets</button>
+	</div>
+
+	<div id="topPositivesDiv">
+		<h3 id="topPosTweetsTitle">Top Positive Tweets:</h3>
+		<div id="positiveResultsDiv"></div>
+		<button class="showMoreButtons" id="showMorePos" onClick="javascript:ShowMorePosTweets();">Show More Top Positive Tweets</button>
+	</div>
+
+	<div id="topNegativesDiv">
+		<h3 id="topNegTweetsTitle">Top Negative Tweets:</h3>
+		<div id="negativeResultsDiv"></div>
+		<button class="showMoreButtons" id="showMoreNeg" onClick="javascript:ShowMoreNegTweets();">Show More Top Negative Tweets</button>
+	</div>
+	<footer>
+		<p>Michael Lee - n8433518, Mitch Sugden - n9136321</p>
+	</footer>
+</div>
+<script src="scripts/graph.js"></script>
+</body>
+</html>

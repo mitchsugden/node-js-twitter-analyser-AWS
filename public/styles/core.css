@@ -1,0 +1,89 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(50, 50, 50);
+}
+
+input[type=text] {
+    width: 80%;
+    height: 30px;
+}
+
+input[type=submit] {
+    width: 15%;
+    height: 35px;
+}
+
+h3 {
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+
+#contentDiv {
+    width: 50%;
+    margin-left: 25%;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    margin: 0 0 25px 0;
+    text-align: center;
+    line-height: 75px;
+    color: white;
+    background-color: rgb(50, 50, 50);
+}
+
+#title {
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+#searchDiv {
+    width: 60%;
+    margin: 40px 20% 40px 20%;
+    overflow: hidden;
+}
+
+#selectionTitle {
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+svg {
+    width: 80%;
+    margin: 10px 10% 30px 10%;
+    background-color: rgb(75, 180, 245);
+    color: white;
+    border-radius: 25px;
+}
+
+footer {
+    height: 100px;
+    margin: 40px 0 0 0;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    background-color: rgb(50, 50, 50);
+}
+
+@media screen and (max-width: 1024px) {
+    #contentDiv {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #contentDiv {
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+.line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
