@@ -11,10 +11,11 @@ var topPositive = [];
 
 // Twitter client authentication
 var client = new twitter({
+    consumer_key: process.env.TWITTER_CONSUMER_KEY || keys.consumer_key, 
+    consumer_secret: process.env.TWITTER_CONSUMER_SECRET || keys.consumer_secret,
+    access_token: process.env.TWITTER_ACCESS_TOKEN || keys.access_token,
+    access_token_secret: process.env.TWITTER_TOKEN_SECRET || keys.access_token_secret
 
-  consumer_secret: 't2DjqFEo5mUIvoQnGd45EP2kJBTpv0QnrN8YpqJwiC8lFF8I3S',
-  access_token_key: '791437941012692993-5dIXimeeAqUEZat8FWa4sfYaAHHjy9l',
-  access_token_secret: 'NLAwEnN7cljeCCXjEs0CUS5sQ8TgLGeEdxMx1OidIfush'
 });
 
 var stream;
