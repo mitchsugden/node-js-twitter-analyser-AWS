@@ -11,7 +11,7 @@ var topPositive = [];
 
 // Twitter client authentication
 var client = new twitter({
-  consumer_key: 'VzulziTssr4NUJkWdeVmqDok5',
+
   consumer_secret: 't2DjqFEo5mUIvoQnGd45EP2kJBTpv0QnrN8YpqJwiC8lFF8I3S',
   access_token_key: '791437941012692993-5dIXimeeAqUEZat8FWa4sfYaAHHjy9l',
   access_token_secret: 'NLAwEnN7cljeCCXjEs0CUS5sQ8TgLGeEdxMx1OidIfush'
